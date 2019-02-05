@@ -1,0 +1,21 @@
+{
+  "name": "dev",
+  "default_attributes": {
+    "ntp": {
+      "servers": [
+        "ntp0.nonprod.acme.internal",
+        "ntp1.nonprod.acme.internal",
+      ]
+    },
+    "apache": {
+      "log_level": "info"
+    }
+  },
+  "json_class": "Chef::Environment",
+  "description": "",  
+  "chef_type": "environment",
+  "cookbook_versions": [
+    { "acme_role_app_2": "= 0.1.0" },
+    { "os-hardening": "= 3.0.0" }
+  ]
+}

@@ -1,0 +1,16 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: habitat
+  install_latest_artifact: true
+  package_origin: jvogt
+  package_name: acme_app_2
+  service_update_strategy: at-once
+
+platforms:
+  - name: centos-7
+
+suites:
+  - name: default-habitat

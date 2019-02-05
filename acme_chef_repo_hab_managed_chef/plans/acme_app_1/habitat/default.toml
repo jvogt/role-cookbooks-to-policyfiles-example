@@ -1,0 +1,13 @@
+interval = 1800
+splay = 1800
+splay_first_run = 0
+run_lock_timeout = 1800
+log_level = "warn"
+chef_client_ident = "" # this is blank by default so it can be populated from the bind
+env_path_prefix = "/sbin:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin"
+ssl_verify_mode = ":verify_peer"
+
+[data_collector]
+enable = true
+token = "abcd1234"
+server_url = "https://a2.chef.jv.run/data-collector/v0/"

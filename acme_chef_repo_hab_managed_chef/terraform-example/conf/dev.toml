@@ -1,0 +1,2 @@
+[attributes]
+ntp.servers = ["ntp0.nonprod.acme.internal", "ntp1.nonprod.acme.internal"]
