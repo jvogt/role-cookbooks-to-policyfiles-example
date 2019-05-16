@@ -15,9 +15,15 @@ suites:
   - name: acme-app-1
     provisioner:
       policyfile: acme_app_1.rb
+    verifier:
+      inspec_tests:
+        - name: cis-centos7-level1
+          compliance: admin/cis-centos7-level1
+
   - name: acme-app-2
     provisioner:
       policyfile: acme_app_2.rb
+
   - name: acme-redis
     provisioner:
       policyfile: acme_redis.rb
