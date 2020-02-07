@@ -1,0 +1,27 @@
+---
+driver:
+  name: docker
+  image: oraclelinux
+  platform: oraclelinux
+
+provisioner:
+  name: habitat
+  install_latest_artifact: true
+  service_update_strategy: at-once
+  hab_version: 0.79.1
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: oraclelinux
+
+suites:
+  - name: acme-app-1
+    provisioner:
+      package_origin: jvtest
+      package_name: acme_app_1
+    verifier:
+      inspec_tests:
+        - name: cis-centos7-level1
+          compliance: admin/cis-centos7-level1
