@@ -1,5 +1,7 @@
 # From Role Cookbooks to Policyfiles (+ hab managed)
 
+[![HIPAA](https://app.soluble.cloud/api/v1/public/badges/c6379cf8-91d2-4c6e-8572-845226904675.svg)](https://app.soluble.cloud/repos/details/github.com/jvogt/role-cookbooks-to-policyfiles-example)  [![IaC](https://app.soluble.cloud/api/v1/public/badges/bc2a6565-6ac1-4574-a270-ddc0c42c2cc8.svg)](https://app.soluble.cloud/repos/details/github.com/jvogt/role-cookbooks-to-policyfiles-example)  
+
 This repo has 3 examples of managing a small multi-tier platform.
 
 1) [./acme_chef_repo_role_cookbooks](acme_chef_repo_role_cookbooks) demonstrates the use of the role cookbook pattern.
